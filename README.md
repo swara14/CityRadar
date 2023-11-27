@@ -1,5 +1,5 @@
 
-# Weather and News Python Script
+# Weather and News Python Mini Project
 
 ## Overview
 
