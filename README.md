@@ -41,7 +41,7 @@ This Python script provides information about the weather and top news headlines
 ### News API (NewsAPI.org)
 
 1. Obtain an API key from [NewsAPI](https://newsapi.org/) and replace the `apiKey` variable in the script with your key.
-2. The base URL for the NewsAPI is `"https://newsapi.org/v2/top-headlines?"`, and the `country` parameter is set to `"us"`.
+2. The base URL for the NewsAPI is `"https://newsapi.org/v2/top-headlines?"`, and the `country` parameter is set to `"US"`.
 
 ## Usage
 
