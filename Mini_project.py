@@ -46,22 +46,22 @@ def fetch_data(city_entry, weather_text, news_text):
     weather_info = display_weather(weather_data)
     weather_text.delete(1.0, tk.END)
     weather_text.insert(tk.END, weather_info)
-    weather_text.config(fg='#73EA94')  # Set text color to white
+    weather_text.config(fg='#73EA94')  
 
     # Get and display news headlines
     news_data = get_news()
     news_info = display_news(news_data)
     news_text.delete(1.0, tk.END)
     news_text.insert(tk.END, news_info)
-    news_text.config(fg='#73EA94')  # Set text color to white
+    news_text.config(fg='white')  
 
 # Create the main GUI window
 root = tk.Tk()
 root.title("Weather and News App")
-root.configure(bg='black')  # Set background color to black
+root.configure(bg='#0F0F0F')  
 
 # Create and place widgets
-city_label = tk.Label(root, text="Enter city name:", font=('Helvetica', 14, 'bold'), bg='black', fg='#73EA94')
+city_label = tk.Label(root, text="Enter city name:", font=('Helvetica', 14, 'bold'), bg='#0F0F0F', fg='#73EA94')
 city_label.pack(pady=5)
 
 city_entry = tk.Entry(root, width=30, font=('Helvetica', 12), bg='white', fg='black')
