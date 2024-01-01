@@ -46,36 +46,34 @@ def fetch_data(city_entry, weather_text, news_text):
     weather_info = display_weather(weather_data)
     weather_text.delete(1.0, tk.END)
     weather_text.insert(tk.END, weather_info)
+    weather_text.config(fg='#73EA94')  # Set text color to white
 
     # Get and display news headlines
     news_data = get_news()
     news_info = display_news(news_data)
     news_text.delete(1.0, tk.END)
     news_text.insert(tk.END, news_info)
+    news_text.config(fg='#73EA94')  # Set text color to white
 
 # Create the main GUI window
 root = tk.Tk()
 root.title("Weather and News App")
-
-# Set background image
-background_image = tk.PhotoImage(file="city_background.png")
-background_label = tk.Label(root, image=background_image)
-background_label.place(relwidth=1, relheight=1)
+root.configure(bg='black')  # Set background color to black
 
 # Create and place widgets
-city_label = tk.Label(root, text="Enter city name:", font=('Helvetica', 14, 'bold'), bg='white')
+city_label = tk.Label(root, text="Enter city name:", font=('Helvetica', 14, 'bold'), bg='black', fg='#73EA94')
 city_label.pack(pady=5)
 
-city_entry = tk.Entry(root, width=30, font=('Helvetica', 12))
+city_entry = tk.Entry(root, width=30, font=('Helvetica', 12), bg='white', fg='black')
 city_entry.pack(pady=5)
 
-fetch_button = tk.Button(root, text="Fetch Data", command=lambda: fetch_data(city_entry, weather_text, news_text), font=('Helvetica', 12, 'bold'), bg='#4CAF50', fg='white')
+fetch_button = tk.Button(root, text="Fetch Data", command=lambda: fetch_data(city_entry, weather_text, news_text), font=('Helvetica', 12), bg='white', fg='black')
 fetch_button.pack(pady=10)
 
-weather_text = Text(root, height=8, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#87CEEB')
+weather_text = Text(root, height=8, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#121212')
 weather_text.pack(pady=5)
 
-news_text = Text(root, height=15, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#FFD700')
+news_text = Text(root, height=15, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#121212')
 news_text.pack(pady=5)
 
 scrollbar = Scrollbar(root)
