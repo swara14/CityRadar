@@ -1,9 +1,8 @@
-
 # Weather and News Python Mini Project
 
 ## Overview
 
-This Python script provides information about the weather and top news headlines using OpenWeatherMap and NewsAPI.
+This Python script provides information about the weather and top news headlines using OpenWeatherMap and NewsAPI. Additionally, a graphical user interface (GUI) has been added using Tkinter to enhance user interaction.
 
 ## Features
 
@@ -15,16 +14,25 @@ This Python script provides information about the weather and top news headlines
    - Fetches top headlines from the NewsAPI for the United States.
    - Displays title, description, publication date, and content for each news article.
 
+3. **Graphical User Interface (Tkinter):**
+   - Utilizes Tkinter to create a user-friendly GUI for interacting with the script.
+   - Includes entry fields for entering the city name, a button to fetch data, and text areas for displaying weather and news information.
+
 ## How to Use
 
 1. **Weather:**
    - Run the script.
-   - Enter the desired city name when prompted.
+   - Enter the desired city name in the Tkinter GUI when prompted.
    - View the retrieved weather information for the specified city.
 
 2. **News:**
    - Run the script.
-   - Get the latest top headlines from the NewsAPI for the United States.
+   - Get the latest top headlines from the NewsAPI for the United States in the Tkinter GUI.
+
+3. **Graphical User Interface (Tkinter):**
+   - Run the script.
+   - Enter the city name and click the "Fetch Data" button to get weather and news information.
+   - View the results in the Tkinter GUI text areas.
 
 ## Requirements
 
@@ -48,8 +56,8 @@ This Python script provides information about the weather and top news headlines
 1. Clone or download the repository.
 2. Open a terminal or command prompt.
 3. Navigate to the directory containing the script.
-4. Run the script
-5. Follow the prompts to enter the city name for weather information.
+4. Run the script.
+5. Use the Tkinter GUI to enter the city name and fetch weather and news information.
 6. View the weather details and top news headlines.
 
 ## Note
@@ -62,4 +70,3 @@ This Python script provides information about the weather and top news headlines
 - [Anushka Korlapati](https://github.com/anushka-korlapati/)
 - [Vikranth Udandarao](https://github.com/Vikranth3140/)
 - [Swara Parekh](https://github.com/swara14/)
-
