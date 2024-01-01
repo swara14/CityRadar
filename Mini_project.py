@@ -57,21 +57,26 @@ def fetch_data(city_entry, weather_text, news_text):
 root = tk.Tk()
 root.title("Weather and News App")
 
+# Set background image
+background_image = tk.PhotoImage(file="city_background.png")
+background_label = tk.Label(root, image=background_image)
+background_label.place(relwidth=1, relheight=1)
+
 # Create and place widgets
-city_label = tk.Label(root, text="Enter city name:")
-city_label.pack()
+city_label = tk.Label(root, text="Enter city name:", font=('Helvetica', 14, 'bold'), bg='white')
+city_label.pack(pady=5)
 
-city_entry = tk.Entry(root)
-city_entry.pack()
+city_entry = tk.Entry(root, width=30, font=('Helvetica', 12))
+city_entry.pack(pady=5)
 
-fetch_button = tk.Button(root, text="Fetch Data", command=lambda: fetch_data(city_entry, weather_text, news_text))
-fetch_button.pack()
+fetch_button = tk.Button(root, text="Fetch Data", command=lambda: fetch_data(city_entry, weather_text, news_text), font=('Helvetica', 12, 'bold'), bg='#4CAF50', fg='white')
+fetch_button.pack(pady=10)
 
-weather_text = Text(root, height=10, width=50)
-weather_text.pack()
+weather_text = Text(root, height=8, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#87CEEB')
+weather_text.pack(pady=5)
 
-news_text = Text(root, height=15, width=50)
-news_text.pack()
+news_text = Text(root, height=15, width=50, wrap=tk.WORD, font=('Helvetica', 12), bg='#FFD700')
+news_text.pack(pady=5)
 
 scrollbar = Scrollbar(root)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
