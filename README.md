@@ -1,4 +1,5 @@
-# Weather and News Python Mini Project
+# CityRadar 
+Python Mini Project
 
 ## Overview
 
