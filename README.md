@@ -68,6 +68,6 @@ This Python script provides information about the weather and top news headlines
 
 ## Collaborators
 
+- [Swara Parekh](https://github.com/swara14/)
 - [Anushka Korlapati](https://github.com/anushka-korlapati/)
 - [Vikranth Udandarao](https://github.com/Vikranth3140/)
-- [Swara Parekh](https://github.com/swara14/)
